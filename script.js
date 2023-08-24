@@ -1,4 +1,4 @@
-// Handle form submission and send email
+// Submit form function
 document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
     const name = document.getElementById("name").value;
@@ -14,15 +14,17 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         method: "POST",
         body: formData
     })
-    .then(response => response.text())
+    .then(response => response.json())
     .then(data => {
         console.log(data); // Log server response
-        const confirmationMessage = document.getElementById("confirmation-message");
-        confirmationMessage.style.display = "block";
+        if (data.success) {
+            alert("Enquiry submitted successfully. We'll get back to you soon.");
+        } else {
+            alert("There was an issue submitting your enquiry. Please try again later.");
+        }
     })
     .catch(error => {
         console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
     });
 });
-
-// Any other existing code you have
