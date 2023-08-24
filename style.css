@@ -1,33 +1,66 @@
-/* Add your existing CSS styles here */
-
-/* Responsive design */
-@media only screen and (max-width: 600px) {
-    /* Adjust styling for smaller screens */
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Business personality */
-header p {
-    font-style: italic;
-    color: #777;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 
-/* Confirmation message */
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Section styles */
+section {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+/* Confirmation message styles */
 #confirmation-message {
     display: none;
     color: #2ecc71;
+    margin-top: 1rem;
 }
 
-/* Social links */
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
 .social-links {
     display: flex;
-    gap: 10px;
+    justify-content: center;
     margin-top: 10px;
 }
 
 .social-link {
-    color: #3498db;
+    color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
+    margin: 0 10px;
 }
-
-/* Add more styles as needed */
