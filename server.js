@@ -20,7 +20,7 @@ app.post('/submit-form', (req, res) => {
 
     const mailOptions = {
         from: 'marajibeauter0@gmail.com',
-        to: 'marajibeauter0@gmail.com', // Your email address
+        to: 'officialbeauter@gmail.com', // Your email address
         subject: 'New Enquiry from YRN TECH KENYA',
         text: `Name: ${name}\nContact: ${contact}\nMessage: ${message}`
     };
