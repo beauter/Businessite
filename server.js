@@ -10,10 +10,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const transporter = nodemailer.createTransport({
-    service: 'Your Email Service Provider', // e.g., Gmail
+    service: 'Gmail', // e.g., Gmail
     auth: {
-        user: 'your_email@example.com',
-        pass: 'your_email_password'
+        user: 'marajibeauter0@gmail.com',
+        pass: '@maraji@123@5905'
     }
 });
 
