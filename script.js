@@ -59,7 +59,7 @@ document.getElementById("contact-form").addEventListener("submit", function(even
 // Function to fetch image URLs from Google Drive folder
 async function getImageUrls() {
     try {
-        const response = await fetch('https://www.googleapis.com/drive/v3/files?q=%271NQ48QlkFNh7hufeN6K3zjMNiv7C6HXF3%27+in+parents&key=YOUR_API_KEY');
+        const response = await fetch('https://www.googleapis.com/drive/v3/files?q=%271NQ48QlkFNh7hufeN6K3zjMNiv7C6HXF3%27+in+parents&key=AIzaSyAs2D7hxO3SSy5RNvew_qx3kHqdTonllvc');
         const data = await response.json();
         const files = data.files;
         
